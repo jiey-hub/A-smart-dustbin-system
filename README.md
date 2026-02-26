@@ -19,6 +19,7 @@ Overflow detection using level sensor
 
 Audio alert using buzzer when bin is full
 
+
 ⚙️ Hardware Components
 
 CPLD (Complex Programmable Logic Device)
@@ -32,6 +33,7 @@ Servo Motor / DC Motor (Lid control)
 Motor Driver Module
 
 Buzzer (Overflow alert)
+
 
 🧠 System Operation
 
@@ -61,6 +63,7 @@ The buzzer remains ON until the bin is emptied or reset.
 
 This prevents overflow and improves waste management efficiency.
 
+
 🗂️ Software / Logic Description
 
 The system is developed using:
@@ -81,6 +84,7 @@ Comparator logic for overflow detection
 
 Output control logic for motor and buzzer
 
+
 ⏱️ Initialization
 
 Upon power-up:
@@ -91,6 +95,7 @@ The buzzer is OFF
 
 Sensors stabilize before normal operation begins
 
+
 🧪 Development Environment
 
 Quartus Prime
@@ -98,6 +103,7 @@ Quartus Prime
 Verilog HDL
 
 CPLD Development Board
+
 
 👩‍💻 Author
 
