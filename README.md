@@ -78,3 +78,8 @@ During system startup:
 
 ---
 
+## Author
+- Yap Boon Jie
+- Electronics Engineering Student
+- Universiti Teknologi Malaysia
+
