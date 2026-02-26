@@ -66,4 +66,27 @@ if (distance < 20) { // If User’s Hand Puts in front of Dustbin Serial.println
 
 /DUSTBIN CAP CLOSURE/
 
-else if (distance >= 20) { // If No Hand is Detected Serial.println("Closing Bin"); // Dustbin Cap Closes servo.write(90); // Servo Motor Rotates 90 Speed delay(200); // In 0.2 Seconds Serial.println("No Move Bin2"); // Dustbin Cap Stays Closed servo.write(0); // Make sure Dustbin Cap is always Closed digitalWrite(TRIG_PIN, LOW); // Detection delayMicroseconds(2); digitalWrite(TRIG_PIN, HIGH); delayMicroseconds(10); digitalWrite(TRIG_PIN, LOW); duration = pulseIn(ECHO_PIN, HIGH); distance = (duration/2) / 29.1; int irStatus = digitalRead(IR_PIN); buzzer = 0; // Make sure Buzzer is always Restarted } }
+else if (distance >= 20) { 
+// If No Hand is Detected 
+Serial.println("Closing Bin"); 
+// Dustbin Cap Closes 
+servo.write(90); 
+// Servo Motor Rotates 90 Speed 
+delay(200); 
+// In 0.2 Seconds 
+Serial.println("No Move Bin2"); 
+// Dustbin Cap Stays Closed 
+servo.write(0); 
+// Make sure Dustbin Cap is always Closed 
+digitalWrite(TRIG_PIN, LOW); 
+// Detection 
+delayMicroseconds(2); 
+digitalWrite(TRIG_PIN, HIGH); 
+delayMicroseconds(10); 
+digitalWrite(TRIG_PIN, LOW); 
+duration = pulseIn(ECHO_PIN, HIGH); 
+distance = (duration/2) / 29.1; 
+int irStatus = digitalRead(IR_PIN); 
+buzzer = 0; // Make sure Buzzer is always Restarted 
+  } 
+}
