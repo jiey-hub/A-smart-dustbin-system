@@ -50,7 +50,7 @@ This mechanism ensures hygienic and touchless waste disposal.
 
 ## Software Description
 
-The system is implemented using embedded C++ with servo motor control and sensor interfacing.
+The system is implemented using embedded C with servo motor control and sensor interfacing.
 
 - Main processes:
 - Distance measurement (Ultrasonic Sensor)  
